@@ -25,20 +25,22 @@
             background-color: brown;
             min-height: 60vh;
             width: 80%;
-            float: left;
         }
 
         aside {
             background-color: chartreuse;
             width: 20%;
             min-height: 60vh;
-            float: left;
         }
 
         footer {
             background-color: #04AA6D;
             color: white;
             min-height: 20vh;
+        }
+
+        .content {
+            display: flex;
         }
 
         @media screen and (max-width:400px) {
@@ -60,14 +62,16 @@
         <a href="index.html">Volver</a>
     </nav>
     <!--Navegacion-->
-    <main>
-        CONTENIDO PRINCIPAL
-    </main>
-    <!--Contenido principal-->
-    <aside>
-        SIDEBAR
-    </aside>
-    <!--Barra lateral-->
+    <div class="content">
+        <main>
+            CONTENIDO PRINCIPAL
+        </main>
+        <!--Contenido principal-->
+        <aside>
+            SIDEBAR
+        </aside>
+        <!--Barra lateral-->
+    </div>
     <footer>
         PIE DE PAGINA
     </footer>
